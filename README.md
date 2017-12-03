@@ -1,13 +1,17 @@
-# Code4CLevels 
+# Coding4CLevels 
 
-2-day training for C-Levels on:
+## Concept
+
+2 day training on **code**, **analytics** and **software managment**, for C-Levels and managers. During this training, we work on the following items:
 - **Agility**
 - **Algorithms**
-- **Coding**
+- **Code**
 - **Collaboration**
 
-## Day 1 - Warm-up: my first steps in Coding
+## Detailed presentation
 
-## Day 2 - Real-time average of arithmetic reviews on large-scale data
+Here are the details regarding the training on (OCTO Academy website](https://www.octo.academy/fr/formation/237-c-levels-coder-pour-mieux-decider-aurelie-jean-et-alain-buzzacaro).
+
+## Structure of the Repo
 
 

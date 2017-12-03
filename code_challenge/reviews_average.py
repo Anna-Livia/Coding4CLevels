@@ -12,30 +12,47 @@
 #
 #           Training Code4CLevels
 #
-#                   2017
+#                2017-2018
 #
 ########################################################
 
+# ---------------------
 # python libraries
-# for random integer
+# ---------------------
+# ~> to generate random integer number
 from random import randint
-# for time
+# ~> to track time duration and date
 import datetime
 import time
 
 # -----------------------------------
 # GLOBAL VARIABLES 
 # -----------------------------------
+
+# ..........................................................................
+# countries a container of all countries from which the reviewer could
+# come from. 
+# ..........................................................................
 countries = ['France', 'UK', 'Italy', 'Portugal', 'Sweden', 'Germany', \
              'Greece', 'USA', 'Mexico', 'Canada', 'Brazil', 'Japan', 'Australia',\
              'India', 'China', 'Tunisia', 'Russia', 'Irland', 'Kenya']
-
-
 
 # -----------------------------------
 # FUNCTIONS 
 # -----------------------------------
 
+# ..........................................................................
+# reviews_generator a function that generates a random set of parameters 
+# for a review.
+#
+# ~> input parameters:
+#    bound1 : lower bound 
+#    bound2 : upper bound
+#
+# ~> how to call the function:  my_review = review_generator(0,5) 
+# ~> example of result: [1, 'Italy', 35] 
+#    that is read [review, country of residence of reviewer, age of reviewer]
+# ..........................................................................
 def reviews_generator(bound1, bound2) :
     # review container -> review number [0:5], country and age
     review = []
@@ -67,7 +84,7 @@ Sum = 0.0
 NumberReviews = 0
 average = 0.0
 
-# artificial time (would not exist in the code)
+# artificial time (would not exist in the real code)
 now = datetime.datetime.now()
 minute = now.minute
 
@@ -77,6 +94,7 @@ NumberOfReviews = 10000
 for x in range(NumberOfReviews):
     # get review 
     review = reviews_generator(0,5)
+    print(review)
     review_value = review[0] # first element in the container
     print("review = %d" %review_value)
     # update the number of reviews
@@ -85,6 +103,7 @@ for x in range(NumberOfReviews):
     Sum = Sum + review_value
     # compute the average
     average = Sum / NumberReviews
+    print(average)
     # update time
     now = datetime.datetime.now()
     minute = now.minute
@@ -93,10 +112,10 @@ for x in range(NumberOfReviews):
 start_time = time.time()
 
 #print the average on screen
-print ("\n")
-print ("Sum = %d and Number of Reviews = %d" %(Sum, NumberReviews))
-print ("--------------> The average is %d" %average)
-print ("\n")
+print("\n")
+print("Sum = %d and Number of Reviews = %d" %(Sum, NumberReviews))
+print("--------------> The average is %f" %average)
+print("\n")
 
 print("--- %s seconds ---" % (time.time() - start_time))
 
