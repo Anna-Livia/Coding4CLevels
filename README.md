@@ -10,7 +10,7 @@
 
 ## Detailed presentation
 
-Here are the details regarding the training on (OCTO Academy website](https://www.octo.academy/fr/formation/237-c-levels-coder-pour-mieux-decider-aurelie-jean-et-alain-buzzacaro).
+Here are the details regarding the training on [OCTO Academy website](https://www.octo.academy/fr/formation/237-c-levels-coder-pour-mieux-decider-aurelie-jean-et-alain-buzzacaro).
 
 ## Structure of the Repo
 
