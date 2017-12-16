@@ -17,3 +17,6 @@ Here are the details regarding the training on [OCTO Academy website](https://ww
 - **code_warmup** : directory that contains the python code (solution) for the warmup exercices.
 - **code_challenge** : directory that contains the python code (solution) for the challenge.
 
+# Sessions
+
+The first session will take place on January 10th and 11th, 2018.
