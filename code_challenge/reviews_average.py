@@ -33,9 +33,8 @@ import time
 # countries a container of all countries from which the reviewer could
 # come from. 
 # ..........................................................................
-countries = ['France', 'UK', 'Italy', 'Portugal', 'Sweden', 'Germany', \
-             'Greece', 'USA', 'Mexico', 'Canada', 'Brazil', 'Japan', 'Australia',\
-             'India', 'China', 'Tunisia', 'Russia', 'Irland', 'Kenya']
+countries = ['France', 'Brazil', 'Tunisia', 'Argentina', 'Italy', 'Israel', \
+             'Kenya', 'Sweden', 'Japan', 'Russia', 'Germany', 'Greece', 'USA', 'UK']
 
 # -----------------------------------
 # FUNCTIONS 
@@ -88,15 +87,40 @@ average = 0.0
 now = datetime.datetime.now()
 minute = now.minute
 
+# FOR THE SECOND PART
+# country of residence
+country_count = { 'France':0.0, 'Brazil': 0.0, 'Tunisia':0.0, 'Argentina':0.0, \
+                  'Italy':0.0, 'Israel':0.0, 'Kenya':0.0, 'Sweden':0.0, \
+                  'Japan':0.0, 'Russia':0.0, 'Germany':0.0, 'Greece':0.0, \
+                  'USA':0.0, 'UK':0.0 } 
+# age
+age_count = { '18-30':0.0, '31-40':0.0, '41-50':0.0, '51-':0.0 }
+
 # number of online reviews
 NumberOfReviews = 10000
 # loop over a certain number of reviews
 for x in range(NumberOfReviews):
     # get review 
     review = reviews_generator(0,5)
-    print(review)
+    # value, country of residence and age
     review_value = review[0] # first element in the container
-    print("review = %d" %review_value)
+    reviewer_country = review[1] # second element in the container
+    reviewer_age = review[2] # third element in the container
+
+    # check the country of residence and add it to the count container
+    country_count[reviewer_country] += 1     
+    # check the age and add it to the count container
+    if reviewer_age < 31 :
+        age_count['18-30'] += 1    
+    elif reviewer_age < 41 :
+        age_count['31-40'] += 1    
+    elif reviewer_age < 51 :
+        age_count['41-50'] += 1    
+    else :
+        age_count['51-'] += 1    
+
+    # update the number of 
+
     # update the number of reviews
     NumberReviews = NumberReviews + 1
     # compute the sum
@@ -118,6 +142,18 @@ print("--------------> The average is %f" %average)
 print("\n")
 
 print("--- %s seconds ---" % (time.time() - start_time))
+
+print('\n')
+
+# print the age count
+print("Here are the ages of the reviewers:")
+print(age_count)
+
+print('\n')
+
+# print the country count
+print("Here are the countries of residence of the reviewers:")
+print(country_count)
 
 # end of file
 
