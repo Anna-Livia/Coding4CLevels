@@ -49,6 +49,25 @@ print("Hello World!")
 for i in range(100) :
     print("Hello World! \n ")
 
+# ------------------------------------------------------
+# Exercice 4 : Use of functions
+# call the function operation to compute the operation
+# on a=32.4 and b=4.7, and print the result
+# on the screen
+# ------------------------------------------------------
+def operation(a,b):
+    # operation to execute on a and b
+    result = (2. * a + 11. * b)/2.5
+    # return the output result
+    return result
+
+a = 32.4
+b = 4.7
+my_result = operation(a,b)
+print("my result is :")
+print(my_result) 
+
+
 # TO BE CONTINUED
 
 # end of file
