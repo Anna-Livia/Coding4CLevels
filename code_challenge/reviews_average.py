@@ -155,5 +155,7 @@ print('\n')
 print("Here are the countries of residence of the reviewers:")
 print(country_count)
 
+print('\n')
+
 # end of file
 
