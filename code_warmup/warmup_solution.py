@@ -12,7 +12,7 @@
 #
 #          Training Coding4CLevels
 #
-#                   2018
+#                2017-2018
 #
 ########################################################
 
@@ -32,6 +32,17 @@ print("----------------------------")
 # ------------------------------------------------------
 # Warmup 1 : The types in Python
 # ------------------------------------------------------
+my_variable = "Hello"
+print(my_variable)
+
+my_variable = 4
+print(my_variable)
+
+my_variable = 4.0
+print(my_variable)
+
+my_variable = [3, 4, 2, 0, 1]
+print(my_variable)
 
 
 print("\n----------------------------")
@@ -42,6 +53,7 @@ print("----------------------------")
 # write a code that prints the sentence "Hello World!" 
 # on your screen
 # ------------------------------------------------------
+print("Hello World!")
 
 
 print("\n----------------------------")
@@ -52,7 +64,9 @@ print("----------------------------")
 # write a code that prints 3 times on 3 different lines
 # the sentence "Hello World!" on your screen
 # ------------------------------------------------------
-
+print("Hello World! \n ")
+print("Hello World! \n ")
+print("Hello World!")
 
 print("\n----------------------------")
 print("        WARMUP 3")
@@ -62,6 +76,8 @@ print("----------------------------")
 # write a code that prints 100 times on 100 different 
 # lines the sentence "Hello World!" on your screen
 # ------------------------------------------------------
+for i in range(100) :
+    print("Hello World! \n ")
 
 
 print("\n----------------------------")
@@ -70,6 +86,15 @@ print("----------------------------")
 # ------------------------------------------------------
 # Warmup 4 : Incrementing in Python
 # ------------------------------------------------------
+# initialization of the variable number_of_students
+number_of_students = 0.0
+
+all_students = 32 # total number of students
+# loop over all the students
+for i in range(all_students) :
+    number_of_students += 1
+    # number_of_students = number_of_students + 1
+print(number_of_students)
 
 
 print("\n----------------------------")
@@ -77,9 +102,14 @@ print("        WARMUP 5")
 print("----------------------------")
 # ------------------------------------------------------
 # Warmup 5 : if loop
-# print only names that has more than 6 characters
 # ------------------------------------------------------
 names = ["Alain", "Emmanuelle", "Naomie", "Loubna", "John", "Said", "Catherine"]
+for n in names :
+    # if the name has more than 6 characters
+    if len(n) > 6 :
+        print("the name : %s has more than 6 characters" %n)
+    else :
+        print("the name : %s has less than 7 characters" %n)
 
 
 print("\n----------------------------")
@@ -89,6 +119,12 @@ print("----------------------------")
 # Warmup 6 : Lists in Python
 # ------------------------------------------------------
 my_list = [7, 349, 2, 45, 2, 83, 1, 8, 930]
+first_value = my_list[0]
+print(first_value)
+third_value = my_list[2]
+print(third_value)
+last_value = my_list[ len(my_list)-1 ]
+print(last_value)
 
 
 print("\n----------------------------")
@@ -98,6 +134,12 @@ print("----------------------------")
 # Warmup 7 : Dictionnaries in Python
 # ------------------------------------------------------
 groceries = {"eggs" : 12, "bananas" : 4, "tomatoes" : 10}
+
+number_of_eggs = groceries["eggs"]
+print(number_of_eggs)
+
+total = groceries["eggs"] + groceries["bananas"] + groceries["tomatoes"]
+print(total)
 
 
 print("\n----------------------------")
@@ -115,5 +157,10 @@ def operation(a,b):
     # return the output result
     return result
 
+a = 32.4
+b = 4.7
+my_result = operation(a,b)
+print("my result is :")
+print(my_result) 
 
 # end of file
