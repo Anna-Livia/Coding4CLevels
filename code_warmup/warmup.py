@@ -47,7 +47,7 @@ print("Hello World!")
 # lines the sentence "Hello World!" on your screen
 # ------------------------------------------------------
 for i in range(100) :
-    prin("Hello World! \n ")
+    print("Hello World! \n ")
 
 # ------------------------------------------------------
 # Exercice 4 : Use of functions
