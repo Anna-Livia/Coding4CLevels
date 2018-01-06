@@ -1,18 +1,20 @@
 ########################################################
 #
 #            ......Authors......
-#             Aurelie Jean, PhD 
-#      In Silico Veritas, LLC (NYC, USA)
-#         aurelie@silicoveritas.com
+#             First and Last Name 
+#                 Affiliation
+#                email address
 #
-#             Alain Buzzacaro
-#        OCTO Academy (Paris, France)
-#            abuzzacaro@octo.com 
+#             First and Last Name 
+#                 Affiliation
+#                email address
 #            ...................
 #
-#          Training #Coding4CLevels
+#           Training #Coding4CLevels
+#        Aurélie Jean (In Silico Veritas)
+#         Alain Buzzacaro (OCTO Academy)
 #
-#                   2018
+#                    2018
 #
 ########################################################
 
