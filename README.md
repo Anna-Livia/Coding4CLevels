@@ -17,11 +17,11 @@ Here are the details regarding the training on [OCTO Academy website](https://ww
 - **code_warmup** : directory that contains the python code (solution) for the warmup exercices.
 - **code_challenge** : directory that contains the python code (solution) for the challenge.
 
-# Supervisors
+## Supervisors
 - Alain Buzzacaro from Octo Academy / Octo Technology abuzzacaro@octo.com 
 - Aurélie Jean from In Silico Veritas aurelie@silicoveritas.com
 
-# Sessions
+## Sessions
 
 - #Coding4CLevels-001 will take place on January 10th and 11th, 2018.
 - #Coding4CLevels-002 will take place on March 14th and 15th, 2018.
