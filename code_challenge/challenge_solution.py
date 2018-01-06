@@ -44,19 +44,15 @@ countries = ['France', 'Brazil', 'Tunisia', 'Argentina', 'Italy', 'Israel', \
 # reviews_generator a function that generates a random set of parameters 
 # for a review.
 #
-# ~> input parameters:
-#    bound1 : lower bound 
-#    bound2 : upper bound
-#
-# ~> how to call the function:  my_review = review_generator(0,5) 
+# ~> how to call the function:  my_review = review_generator() 
 # ~> example of result: [1, 'Italy', 35] 
 #    that is read [review, country of residence of reviewer, age of reviewer]
 # ..........................................................................
-def reviews_generator(bound1, bound2) :
+def reviews_generator() :
     # review container -> review number [0:5], country and age
     review = []
     # get arithmetic review
-    review_value = randint(bound1, bound2)
+    review_value = randint(0,5)
     # get country
     reviewer_country = countries[ randint(0, len(countries)-1) ]
     # get age (between 16 and 100 years old)
@@ -87,21 +83,28 @@ average = 0.0
 now = datetime.datetime.now()
 minute = now.minute
 
-# FOR THE SECOND PART
-# country of residence
+# ------------------ FOR THE SECOND PART
+# initialization of the containers of count of reviewers
+# for country of residence and for age
+# ~> country of residence
 country_count = { 'France':0.0, 'Brazil': 0.0, 'Tunisia':0.0, 'Argentina':0.0, \
                   'Italy':0.0, 'Israel':0.0, 'Kenya':0.0, 'Sweden':0.0, \
                   'Japan':0.0, 'Russia':0.0, 'Germany':0.0, 'Greece':0.0, \
                   'USA':0.0, 'UK':0.0 } 
-# age
+# ~> age
 age_count = { '18-30':0.0, '31-40':0.0, '41-50':0.0, '51-':0.0 }
+# ---------------------------------------
 
 # number of online reviews
 NumberOfReviews = 10000
-# loop over a certain number of reviews
+
+# to get the time of execution
+start_time = time.time()
+
+# loop over the number of reviews
 for x in range(NumberOfReviews):
     # get review 
-    review = reviews_generator(0,5)
+    review = reviews_generator()
     # value, country of residence and age
     review_value = review[0] # first element in the container
     reviewer_country = review[1] # second element in the container
@@ -119,40 +122,32 @@ for x in range(NumberOfReviews):
     else :
         age_count['51-'] += 1    
 
-    # update the number of 
-
     # update the number of reviews
     NumberReviews = NumberReviews + 1
     # compute the sum
     Sum = Sum + review_value
     # compute the average
     average = Sum / NumberReviews
-    print(average)
-    # update time
-    now = datetime.datetime.now()
-    minute = now.minute
 
-# to get the time of execution
-start_time = time.time()
-
-#print the average on screen
+# PRINT ON SCREEN --------------------------------
+# ~> print the average
 print("\n")
-print("Sum = %d and Number of Reviews = %d" %(Sum, NumberReviews))
-print("--------------> The average is %f" %average)
+print("------> The average is %f" %average)
 print("\n")
 
-print("--- %s seconds ---" % (time.time() - start_time))
+# ~> print the execution time
+print("------> execution time : %s seconds" % (time.time() - start_time))
 
 print('\n')
 
-# print the age count
-print("Here are the ages of the reviewers:")
+# ~> print the age count
+print("------> Ages of the reviewers:")
 print(age_count)
 
 print('\n')
 
-# print the country count
-print("Here are the countries of residence of the reviewers:")
+# ~> print the country count
+print("------> Countries of residence of the reviewers:")
 print(country_count)
 
 print('\n')
