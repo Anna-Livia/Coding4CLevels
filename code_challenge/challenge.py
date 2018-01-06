@@ -10,7 +10,7 @@
 #                email address
 #            ...................
 #
-#           Training Code4CLevels
+#           Training #Coding4CLevels
 #        Aurélie Jean (In Silico Veritas)
 #         Alain Buzzacaro (OCTO Academy)
 #
