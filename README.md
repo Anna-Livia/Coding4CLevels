@@ -23,5 +23,5 @@ Here are the details regarding the training on [OCTO Academy website](https://ww
 
 ## Sessions
 
-- #Coding4CLevels-001 will take place on January 10th and 11th, 2018.
-- #Coding4CLevels-002 will take place on March 14th and 15th, 2018.
+- #Coding4CLevels session 001 will take place on January 10th and 11th, 2018.
+- #Coding4CLevels session 002 will take place on March 14th and 15th, 2018.
