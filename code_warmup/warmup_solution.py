@@ -86,15 +86,15 @@ print("----------------------------")
 # ------------------------------------------------------
 # Warmup 4 : Incrementing in Python
 # ------------------------------------------------------
-# initialization of the variable number_of_students
-number_of_students = 0.0
+# initialization of the variable roll_call
+roll_call = 0
 
 all_students = 32 # total number of students
 # loop over all the students
 for i in range(all_students) :
-    number_of_students += 1
-    # number_of_students = number_of_students + 1
-print(number_of_students)
+    roll_call += 1
+    # roll_call = roll_call + 1
+print(roll_call)
 
 
 print("\n----------------------------")

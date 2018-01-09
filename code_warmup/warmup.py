@@ -67,7 +67,14 @@ print("        WARMUP 4")
 print("----------------------------")
 # ------------------------------------------------------
 # Warmup 4 : Incrementing in Python
+# use a foor loop that is incrementing the number of 
+# students in a class when doing a roll call
 # ------------------------------------------------------
+# total number of students in the class
+all_students = 32
+# roll call initialized to 0 
+roll_call = 0
+
 
 
 print("\n----------------------------")
