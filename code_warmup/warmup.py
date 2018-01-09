@@ -76,6 +76,11 @@ print("----------------------------")
 # ------------------------------------------------------
 # Warmup 5 : if loop
 # print only names that has more than 6 characters
+#
+# using a if condition, print a message that specifies 
+# that the given name has more than 6 characters,
+# else print a message that specifies that the name has 
+# less than 6 characters
 # ------------------------------------------------------
 names = ["Alain", "Emmanuelle", "Naomie", "Loubna", "John", "Said", "Catherine"]
 
@@ -85,6 +90,12 @@ print("        WARMUP 6")
 print("----------------------------")
 # ------------------------------------------------------
 # Warmup 6 : Lists in Python
+# - Access the first value of the list and print it 
+#   on screen
+# - Access the third value of the list and print it
+#   on screen
+# - Access the last value of the list and print it 
+#   on screen
 # ------------------------------------------------------
 my_list = [7, 349, 2, 45, 2, 83, 1, 8, 930]
 
@@ -94,6 +105,9 @@ print("        WARMUP 7")
 print("----------------------------")
 # ------------------------------------------------------
 # Warmup 7 : Dictionnaries in Python
+# - Access the number of eggs and print the value on screen
+# - Access the total number of groceries and print the value
+#   on screen
 # ------------------------------------------------------
 groceries = {"eggs" : 12, "bananas" : 4, "tomatoes" : 10}
 
