@@ -1,0 +1,1 @@
+rm *.{pdf,log,out,aux,nav,snm,toc}

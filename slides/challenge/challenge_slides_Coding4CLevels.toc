@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Our Product}{2}{0}{1}
+\beamer@sectionintoc {2}{Our Goals and Challenges}{4}{0}{2}
+\beamer@sectionintoc {3}{Efficient Algorithm?}{8}{0}{3}
+\beamer@sectionintoc {4}{Let's Play!}{22}{0}{4}

@@ -4,10 +4,6 @@
 #             First and Last Name 
 #                 Affiliation
 #                email address
-#
-#             First and Last Name 
-#                 Affiliation
-#                email address
 #            ...................
 #
 #           Training #Coding4CLevels

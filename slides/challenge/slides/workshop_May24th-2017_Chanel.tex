@@ -1,0 +1,49 @@
+%!TEX program = xelatex
+\documentclass{beamer}
+
+\usepackage{blindtext}
+
+\usepackage{fontenc} % added by Aurelie Jean 
+
+\usetheme{Execushares}
+
+\definecolor{isvblue}{RGB}{37,5,247} % ISV blue color (#2505F7)
+
+\linespread{1.5}
+
+\title{How to write and code an Algorithm to average the online client reviews?}
+\subtitle{\textcolor{isvblue}{\textit{Coding for a brighter and better future for everyone}}}
+
+\titlegraphic{\includegraphics[width=0.30\textwidth]{./pictures/chanel.jpg}\hspace{5.0cm}
+              \includegraphics[width=0.26\textwidth]{./pictures/Aurelie-Jean_2016_001.JPG}}
+
+\author{Dr. Aur\'elie JEAN, PhD}
+\institute{\textcolor{isvblue}{In Silico Veritas, LLC} - aurelie@silicoveritas.com}
+\date{seminar Chanel NYC - May 24th 2017}
+
+%\setcounter{showSlideNumbers}{1}
+
+\begin{document}
+	\setcounter{showProgressBar}{0}
+	\setcounter{showSlideNumbers}{0}
+
+        \begin{frame}%[label=pageone]
+        \maketitle
+        \end{frame}
+
+
+	\setcounter{framenumber}{0}
+	\setcounter{showProgressBar}{1}
+	\setcounter{showSlideNumbers}{1}
+
+        \section{Our Product}
+        \input{./slides/intro.tex}
+
+        \section{Our Goals and Challenges}
+        \input{./slides/goal.tex}
+
+        \section{Efficient Algorithm?}
+        \input{./slides/efficient.tex}
+
+        \section{Let's Play!}
+\end{document}

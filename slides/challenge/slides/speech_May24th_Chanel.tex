@@ -1,0 +1,67 @@
+%!TEX program = xelatex
+\documentclass{beamer}
+
+\usepackage{blindtext}
+
+\usepackage{fontenc} % added by Aurelie Jean 
+
+\usetheme{Execushares}
+
+\definecolor{isvblue}{RGB}{37,5,247} % ISV blue color (#2505F7)
+
+\linespread{1.5}
+
+\title{Digitalo-Analytic Transformation:\\The Power of Data \\Which role can we play? What are our strength? How to be better prepared?}
+\subtitle{\textcolor{isvblue}{\textit{Coding for a brighter and better future for everyone}}}
+
+\titlegraphic{\includegraphics[width=0.30\textwidth]{./pictures/chanel.jpg}\hspace{5.0cm}
+              \includegraphics[width=0.26\textwidth]{./pictures/Aurelie-Jean_2016_001.JPG}}
+
+\author{Dr. Aur\'elie JEAN, PhD}
+\institute{\textcolor{isvblue}{In Silico Veritas, LLC} - aurelie@silicoveritas.com}
+\date{seminar Chanel NYC - May, 24th 2017}
+
+%\setcounter{showSlideNumbers}{1}
+
+\begin{document}
+	\setcounter{showProgressBar}{0}
+	\setcounter{showSlideNumbers}{0}
+
+        \begin{frame}%[label=pageone]
+        \maketitle
+        \end{frame}
+
+
+	\setcounter{framenumber}{0}
+	\setcounter{showProgressBar}{1}
+	\setcounter{showSlideNumbers}{1}
+
+        
+% PART 0
+        \section{Microprocessor Technology Revolution}
+        \input{./slides/microprocessor.tex}
+
+        \section{What has changed today?}
+        \input{./slides/changes.tex}
+
+        \section{To touch people, you have to talk to their connected device}
+
+
+% PART 1
+        \section{Digitalo-Analytic Transformation}
+        \input{./slides/digital-transfo.tex}
+        \input{./slides/digitalo-analytic-transfo.tex}
+        \section{Diversity will drive the success of this transformation!}
+        \input{./slides/diversity-definition.tex}
+
+        \input{./slides/diversity-benefits.tex}
+
+% PART 2
+	\section{(Big) Data: a technological and human transformation}
+        \input{./slides/what-is-data.tex}
+
+% PART 3
+       \section{Coding is the best valuable asset to embrace this transformation}
+        \input{./slides/coding.tex}
+
+\end{document}

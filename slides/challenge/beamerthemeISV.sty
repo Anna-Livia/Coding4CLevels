@@ -1,0 +1,56 @@
+% Copyright 2017 by Aurelie Jean
+% In Silico Veritas, LLC
+
+\definecolor{isvblue}{RGB}{37,5,247} % ISV blue color (#2505F7)
+
+%\setbeamercolor*{normal text}{fg=white!50!white,bg=black!90!isvblue}
+\setbeamercolor*{normal text}{fg=white!50!white,bg=white}
+
+\DeclareOption{overlystylish}
+{
+  \def\beamer@cta@do{
+    \setbeamertemplate{background canvas}[vertical shading][bottom=black,top=black,middle=blue!50!black]
+  }
+}
+\ProcessOptions
+
+\@ifundefined{beamer@cta@do}{}{\beamer@cta@do}
+
+\mode<presentation>
+
+\setbeamercolor*{example text}{fg=green!65!black}
+
+%\setbeamercolor*{structure}{fg=blue!25!white}
+\setbeamercolor*{structure}{fg=isvblue}
+
+\setbeamercolor{palette primary}{use={structure,normal text},fg=structure.fg,bg=normal text.bg!75!black}
+\setbeamercolor{palette secondary}{use={structure,normal text},fg=structure.fg,bg=normal text.bg!60!black}
+\setbeamercolor{palette tertiary}{use={structure,normal text},fg=structure.fg,bg=normal text.bg!45!black}
+\setbeamercolor{palette quaternary}{use={structure,normal text},fg=structure.fg,bg=normal text.bg!30!black}
+
+\setbeamercolor*{block body}{bg=normal text.bg!90!black}
+\setbeamercolor*{block body alerted}{bg=normal text.bg!90!black}
+\setbeamercolor*{block body example}{bg=normal text.bg!90!black}
+
+\setbeamercolor*{block title}{parent=structure,bg=normal text.bg!75!black}
+\setbeamercolor*{block title alerted}{use={normal text,alerted text},fg=alerted text.fg!75!normal text.fg,bg=normal text.bg!75!black}
+\setbeamercolor*{block title example}{use={normal text,example text},fg=example text.fg!75!normal text.fg,bg=normal text.bg!75!black}
+
+\setbeamercolor{item projected}{fg=black}
+
+\setbeamercolor*{sidebar}{parent=palette primary}
+
+\setbeamercolor{palette sidebar primary}{use=normal text,fg=normal text.fg}
+\setbeamercolor{palette sidebar secondary}{use=structure,fg=structure.fg}
+\setbeamercolor{palette sidebar tertiary}{use=normal text,fg=normal text.fg}
+\setbeamercolor{palette sidebar quaternary}{use=structure,fg=structure.fg}
+
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{}
+
+% draw the actual text
+%\node[anchor=south,text width=\slidewidth-1cm,inner xsep=0.5cm] at (0.5\slidewidth,5.5cm) 
+%\node[anchor=north east,text width=\slidewidth-1cm,align=right] at (\slidewidth-0.4cm,5cm) {\color{isvblue}\small\insertsubtitle};
+
+\mode
+<all>
