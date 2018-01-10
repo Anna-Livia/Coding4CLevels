@@ -84,6 +84,7 @@ now = datetime.datetime.now()
 minute = now.minute
 
 # ------------------ FOR THE SECOND PART
+
 # initialization of the containers of count of reviewers
 # for country of residence and for age
 # ~> country of residence
@@ -93,7 +94,12 @@ country_count = { 'France':0.0, 'Brazil': 0.0, 'Tunisia':0.0, 'Argentina':0.0, \
                   'USA':0.0, 'UK':0.0 } 
 # ~> age
 age_count = { '18-30':0.0, '31-40':0.0, '41-50':0.0, '51-':0.0 }
+
 # ---------------------------------------
+
+
+
+# DO THE CALCULATION -----------------------------
 
 # number of online reviews
 ### ADD CODE ###
@@ -104,6 +110,9 @@ start_time = time.time()
 # loop over the number of reviews
 ### ADD CODE ###
 
+# ------------------------------------------------
+
+
 
 # PRINT ON SCREEN --------------------------------
 print('\n')
@@ -111,6 +120,8 @@ print('\n')
 ### ADD CODE ###
 
 print('\n')
+
+# ------------------------------------------------
 
 # end of file
 
