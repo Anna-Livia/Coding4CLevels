@@ -13,6 +13,9 @@
 #          Training #Coding4CLevels
 #
 #                2017-2018
+
+#         Edited by Anna-Livia Gomart
+#                    2019
 #
 ########################################################
 
@@ -34,15 +37,27 @@ print("----------------------------")
 # ------------------------------------------------------
 my_variable = "Hello"
 print(my_variable)
+print(type(my_variable))
 
 my_variable = 4
 print(my_variable)
+print(type(my_variable))
 
 my_variable = 4.0
 print(my_variable)
+print(type(my_variable))
 
 my_variable = [3, 4, 2, 0, 1]
 print(my_variable)
+print(type(my_variable))
+
+my_variable = {
+    "eggs": 3,
+    "milk": 4,
+    "butter": 2,
+}
+print(my_variable)
+print(type(my_variable))
 
 
 print("\n----------------------------")
@@ -50,13 +65,13 @@ print("        WARMUP 2a")
 print("----------------------------")
 # ------------------------------------------------------
 # Warmup 2a : Hello World!
-# write a code that prints the sentence "Hello World!" 
+# write a code that prints the sentence "Hello World!"
 # on your screen
 # ------------------------------------------------------
 print("Hello World!")
 
 
-print("\n----------------------------")
+print("----------------------------")
 print("        WARMUP 2b")
 print("----------------------------")
 # ------------------------------------------------------
@@ -64,23 +79,23 @@ print("----------------------------")
 # write a code that prints 3 times on 3 different lines
 # the sentence "Hello World!" on your screen
 # ------------------------------------------------------
-print("Hello World! \n ")
-print("Hello World! \n ")
+print("Hello World!")
+print("Hello World!")
 print("Hello World!")
 
-print("\n----------------------------")
+print("----------------------------")
 print("        WARMUP 3")
 print("----------------------------")
 # ------------------------------------------------------
 # Warmup 3 : Hello World! x 100 times
-# write a code that prints 100 times on 100 different 
+# write a code that prints 100 times on 100 different
 # lines the sentence "Hello World!" on your screen
 # ------------------------------------------------------
 for i in range(100) :
-    print("Hello World! \n ")
+    print("Hello World!")
 
 
-print("\n----------------------------")
+print("----------------------------")
 print("        WARMUP 4")
 print("----------------------------")
 # ------------------------------------------------------
@@ -91,10 +106,10 @@ roll_call = 0
 
 all_students = 32 # total number of students
 # loop over all the students
-for i in range(all_students) :
+for i in range(all_students):
     roll_call += 1
     # roll_call = roll_call + 1
-print(roll_call)
+    print(roll_call)
 
 
 print("\n----------------------------")
@@ -104,12 +119,12 @@ print("----------------------------")
 # Warmup 5 : if loop
 # ------------------------------------------------------
 names = ["Alain", "Emmanuelle", "Naomie", "Loubna", "John", "Said", "Catherine"]
-for n in names :
+for name in names:
     # if the name has more than 6 characters
-    if len(n) > 6 :
-        print("the name : %s has more than 6 characters" %n)
+    if len(name) > 6:
+        print(f"the name : {name} has more than 6 characters")
     else :
-        print("the name : %s has less than 7 characters" %n)
+        print(f"the name : {name} has less than 7 characters")
 
 
 print("\n----------------------------")
@@ -123,8 +138,10 @@ first_value = my_list[0]
 print(first_value)
 third_value = my_list[2]
 print(third_value)
-last_value = my_list[ len(my_list)-1 ]
+last_value = my_list[len(my_list)-1]
 print(last_value)
+last_value_short = my_list[-1]
+print(last_value_short)
 
 
 print("\n----------------------------")
@@ -141,6 +158,10 @@ print(number_of_eggs)
 total = groceries["eggs"] + groceries["bananas"] + groceries["tomatoes"]
 print(total)
 
+total = 0
+for value in groceries.values():
+    total += value
+print(total)
 
 print("\n----------------------------")
 print("        WARMUP 8")
@@ -160,7 +181,6 @@ def operation(a,b):
 a = 32.4
 b = 4.7
 my_result = operation(a,b)
-print("my result is :")
-print(my_result) 
+print(f"my result is : {my_result}")
 
 # end of file

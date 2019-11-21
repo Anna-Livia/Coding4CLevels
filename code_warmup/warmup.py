@@ -11,6 +11,9 @@
 #         Alain Buzzacaro (OCTO Academy)
 #
 #                    2018
+
+#         Edited by Anna-Livia Gomart
+#                    2019
 #
 ########################################################
 
@@ -87,7 +90,7 @@ print("----------------------------")
 # using a if condition, print a message that specifies 
 # that the given name has more than 6 characters,
 # else print a message that specifies that the name has 
-# less than 6 characters
+# 6 characters or less.
 # ------------------------------------------------------
 names = ["Alain", "Emmanuelle", "Naomie", "Loubna", "John", "Said", "Catherine"]
 
@@ -130,7 +133,7 @@ print("----------------------------")
 # ------------------------------------------------------
 def operation(a,b):
     # operation to execute on a and b
-    result = (2. * a + 11. * b)/2.5
+    result = (2 * a + 11 * b)/2.5
     # return the output result
     return result
 
