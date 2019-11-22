@@ -16,6 +16,9 @@
 #
 #                    2018
 #
+#         Edited by Anna-Livia Gomart
+#                    2019
+#
 ########################################################
 
 # ---------------------
@@ -58,8 +61,8 @@ def reviews_generator() :
     # get country
     reviewer_country = countries[ randint(0, len(countries)-1) ]
     # get age (between 16 and 100 years old)
-    reviewer_age = randint(16, 100)
- 
+    reviewer_age = randint(18, 100)
+
     # append parameters to the review container
     review.append(review_value)
     review.append(reviewer_country)
