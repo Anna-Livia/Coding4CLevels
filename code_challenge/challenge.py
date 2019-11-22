@@ -79,6 +79,24 @@ def reviews_generator() :
 # MAIN CODE 
 # -----------------------------------
 
+
+
+number_reviews = 100000
+sum_reviews = 0
+for element in range (number_reviews):
+   my_list = reviews_generator()
+   first_value = my_list[0]
+   sum_reviews += first_value
+average_review = sum_reviews/number_reviews
+
+
+print (sum_reviews)
+print (average_review)
+
+
+
+
+
 # storage 
 ### ADD CODE ###
 
