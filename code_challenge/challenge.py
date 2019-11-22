@@ -109,7 +109,7 @@ country_count = {
     'UK':[0,0]
      } 
 # ~> age
-age_count = { '18-30':0.0, '31-40':0.0, '41-50':0.0, '51-':0.0 }
+age_count = { '18-30':[0,0], '31-40':[0,0], '41-50':[0,0], '51-':[0,0] }
 
 # ---------------------------------------
 
@@ -141,6 +141,28 @@ print(moyenne)
 
 
 
+iteration = 10000
+
+for element in range (iteration):
+    review = reviews_generator()
+    note = review[0]
+    age = review[2]
+    if  age <31:
+        age_count["18-30"][0] += 1
+        age_count["18-30"][1] += note
+    elif age <41:
+        age_count["31-40"][0] += 1
+        age_count["31-40"][1] += note
+    elif age <51:
+        age_count["41-50"][0] += 1
+        age_count["41-50"][1] += note
+    else:
+        age_count["51-"][0] += 1
+        age_count["51-"][1] += note
+        
+
+for category_age, score in age_count.items() :
+    print (f"{category_age} : {score[1]/score[0]}")
 
 # DO THE CALCULATION -----------------------------
 
