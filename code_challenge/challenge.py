@@ -125,6 +125,13 @@ print('\n')
 print('\n')
 
 # ------------------------------------------------
-
+sum_values = 0
+nb_reviews = 1000
 # end of file
-
+for a in range(nb_reviews) :
+    result = reviews_generator()
+    print (result)
+    sum_values += result[0]
+    print (sum_values)
+average = sum_values / nb_reviews
+print (average)
