@@ -102,6 +102,18 @@ age_count = { '18-30':0.0, '31-40':0.0, '41-50':0.0, '51-':0.0 }
 
 
 
+value = 0
+iteration = 1000
+for element in range (iteration):
+    result = reviews_generator()
+    value = result[0]+value
+    print(value)
+moyenne = value/iteration
+print(moyenne)
+
+
+
+
 # DO THE CALCULATION -----------------------------
 
 # number of online reviews
@@ -125,6 +137,8 @@ print('\n')
 print('\n')
 
 # ------------------------------------------------
+
+
 
 # end of file
 
