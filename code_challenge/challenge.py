@@ -91,10 +91,23 @@ minute = now.minute
 # initialization of the containers of count of reviewers
 # for country of residence and for age
 # ~> country of residence
-country_count = { 'France':0.0, 'Brazil': 0.0, 'Tunisia':0.0, 'Argentina':0.0, \
-                  'Italy':0.0, 'Israel':0.0, 'Kenya':0.0, 'Sweden':0.0, \
-                  'Japan':0.0, 'Russia':0.0, 'Germany':0.0, 'Greece':0.0, \
-                  'USA':0.0, 'UK':0.0 } 
+# the values are organisaed such as [number of reveiws, sum of reviews]
+country_count = { 
+    'France':[0,0], 
+    'Brazil': [0,0], 
+    'Tunisia':[0,0], 
+    'Argentina':[0,0],
+    'Italy':[0,0],
+    'Israel':[0,0],
+    'Kenya':[0,0], 
+    'Sweden':[0,0],
+    'Japan':[0,0],
+    'Russia':[0,0], 
+    'Germany':[0,0],
+    'Greece':[0,0],
+    'USA':[0,0],
+    'UK':[0,0]
+     } 
 # ~> age
 age_count = { '18-30':0.0, '31-40':0.0, '41-50':0.0, '51-':0.0 }
 
@@ -104,6 +117,21 @@ age_count = { '18-30':0.0, '31-40':0.0, '41-50':0.0, '51-':0.0 }
 
 value = 0
 iteration = 1000
+
+for element in range (iteration):
+    review = reviews_generator()
+    note = review[0]
+    pays = review[1]
+    country = country_count[pays]
+    country[0] += 1
+    country[1] += note
+for country_name, score in country_count.items() :
+    print (f"{country_name} : {score[1]/score[0]}")
+
+
+
+value = 0
+iteration = 2
 for element in range (iteration):
     result = reviews_generator()
     value = result[0]+value
